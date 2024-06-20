@@ -30,7 +30,7 @@
                             <li class="list-group-item list-group-item-secondary rounded"><strong>Autor:</strong></li>
                             <li class="list-group-item mb-2 rounded">
                                 <select class="form-control" name="id_user" id="id_user" required>
-                                    <option value="{{$book->relUsers->id ?? ''}}" disabled selected>{{$book->relUsers->name ?? 'Selecione um Autor'}}</option>
+                                    <option value="{{$book->relUsers->id ?? ''}}" selected>{{$book->relUsers->name ?? 'Selecione um Autor'}}</option>
                                     @foreach($users as $user)
                                         <option value="{{$user->id}}">{{$user->name}}</option>
                                     @endforeach
